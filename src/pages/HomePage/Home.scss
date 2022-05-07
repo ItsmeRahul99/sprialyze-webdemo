@@ -1,0 +1,48 @@
+@import "../../assests/styles/variable.scss";
+
+.home-container {
+  display: block;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+
+  .contact_title_section {
+    position: relative;
+    background: linear-gradient(180deg, #194d41 0%, rgba(25, 77, 65, 0.7) 100%);
+    .backgroundImage1 {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+    .container {
+      &.form_text_container {
+        padding: 56px 0;
+        .row {
+          .left_text {
+            .outline_big_text {
+              color: transparent;
+              -webkit-text-stroke-width: 1px;
+              -webkit-text-stroke-color: $white_text_color;
+              font-size: 4rem;
+              font-weight: 300;
+              margin: 0;
+              line-height: 72px;
+            }
+            .filled_big_text {
+              color: $white_text_color;
+              font-size: 4rem;
+              font-weight: 700;
+              margin: 0;
+              line-height: 72px;
+            }
+            .normal_text {
+              color: rgba(255, 255, 255, 0.8);
+              font-weight: 300;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

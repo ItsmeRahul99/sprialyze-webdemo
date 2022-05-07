@@ -1,0 +1,50 @@
+@import "../../assests/styles/variable.scss";
+
+.inputContainer {
+  position: relative;
+  height: 48px;
+  width: 100%;
+  margin-bottom: 18px;
+
+  .input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0 20px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.04);
+    z-index: 1;
+    color: $white_text_color;
+    font-weight: 600;
+
+    &::placeholder {
+      color: transparent;
+    }
+    // &:focus {
+    //   border: 2px solid #fff;
+    // }
+  }
+  .label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    padding: 0 4px;
+    color: #dadce0;
+    font-size: 1rem;
+    transition: 0.5s;
+    z-index: 0;
+  }
+  .input:focus + .label {
+    top: -10px;
+    left: 3px;
+    z-index: 10;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: $white_text_color;
+  }
+}

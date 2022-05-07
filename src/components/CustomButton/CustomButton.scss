@@ -1,0 +1,23 @@
+@import "../../assests/styles/variable.scss";
+
+.buttonContainer {
+  width: 100%;
+  .button-icon {
+    margin: 0 12px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+  }
+  .btn-primary {
+    background-color: $primary_light_color;
+    border-color: transparent;
+
+    &:hover {
+      box-shadow: 0 1px 8px 0.25rem rgb(0 0 0 / 6%);
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

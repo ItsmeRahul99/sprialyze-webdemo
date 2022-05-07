@@ -1,0 +1,19 @@
+@import "../../assests/styles/variable.scss";
+
+.contact_form_container {
+  max-width: 472px;
+  width: 100%;
+  background: linear-gradient(180deg, #2a7d6c 0%, rgba(62, 105, 96, 0.62) 100%);
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 50px 28px 56px;
+
+  .title_form_text {
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 34px;
+    text-align: center;
+    color: $white_text_color;
+    margin-bottom: 28px;
+  }
+}
