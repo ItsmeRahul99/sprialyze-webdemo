@@ -8,10 +8,11 @@ const CustomButton = ({
   containerClass = "",
   leftIcon,
   rightIcon,
+  size,
 }) => {
   return (
     <div class={`buttonContainer ${containerClass}`}>
-      <Button variant={variant}>
+      <Button variant={variant} size={size}>
         {leftIcon && (
           <img src={leftIcon} className="button-icon" alt="left-icon" />
         )}

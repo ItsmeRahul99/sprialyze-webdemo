@@ -7,22 +7,29 @@
 
   .contact_title_section {
     position: relative;
-    background: linear-gradient(180deg, #194d41 0%, rgba(25, 77, 65, 0.7) 100%);
-    .backgroundImage1 {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      z-index: -1;
-    }
+    background-image: linear-gradient(
+        180deg,
+        #194d41 0%,
+        rgba(25, 77, 65, 0.7) 100%
+      ),
+      url("../../assests/image/background1.jpg");
+    background-size: cover;
+
     .container {
       &.form_text_container {
         padding: 56px 0;
+        margin-bottom: 40px;
+        .form_text_row {
+          display: flex;
+          align-items: center;
+        }
         .row {
           .left_text {
             .outline_big_text {
-              color: transparent;
-              -webkit-text-stroke-width: 1px;
-              -webkit-text-stroke-color: $white_text_color;
+              color: #1f5246;
+              text-shadow: 0px -1px 0px $white_text_color,
+                0 1px 0px $white_text_color, 0px 1px 0px $white_text_color,
+                0 0px 0px $white_text_color, 0 0 0px $white_text_color;
               font-size: 4rem;
               font-weight: 300;
               margin: 0;
@@ -39,6 +46,134 @@
               color: rgba(255, 255, 255, 0.8);
               font-weight: 300;
               font-size: 1.2rem;
+            }
+          }
+          .contact_form_column_section {
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+    .wave_absolute {
+      position: absolute;
+      bottom: -10px;
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  .images_collection_section {
+    display: block;
+    margin: 60px 0;
+  }
+  .organize_text_section {
+    display: block;
+    margin: 60px 0;
+    .organize_text_container {
+      color: $white_text_color;
+      .organize_big_text {
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 46px;
+
+        .outline_big_text {
+          text-shadow: 0px -1px 0px $black_text_color,
+            0 1px 0px $black_text_color, 0px 1px 0px $black_text_color,
+            0 0px 0px $black_text_color, 0 0 0px $black_text_color,
+            0px -1px 0px $black_text_color, 0 1px 0px $black_text_color,
+            0px 1px 0px $black_text_color, 0 0px 0px $black_text_color,
+            0 0 0px $black_text_color;
+        }
+        .filled_big_test {
+          color: $black_text_color;
+        }
+      }
+
+      .organize_medium_text {
+        line-height: 28px;
+        font-size: 1.1rem;
+        font-style: italic;
+        color: $main_dark_grey_color;
+        font-weight: 400;
+
+        .organize_bold_text {
+          font-weight: 700;
+        }
+      }
+      .organize_normal_text {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: $main_dark_grey_color;
+        line-height: 24px;
+      }
+    }
+  }
+  .card_collection_section {
+    display: block;
+    margin: 60px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-container {
+    .contact_title_section {
+      .container {
+        &.form_text_container {
+          .row {
+            .left_text {
+              .outline_big_text {
+                text-align: center;
+              }
+              .filled_big_text {
+                text-align: center;
+              }
+              .normal_text {
+                text-align: center;
+              }
+            }
+            .contact_form_column_section {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .home-container {
+    .contact_title_section {
+      .container {
+        &.form_text_container {
+          padding: var(--bs-gutter-x, 0.75rem) 12px var(--bs-gutter-x, 0.75rem);
+          .row {
+            .left_text {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .outline_big_text {
+                text-align: center;
+                font-size: 2.25rem;
+                line-height: 50px;
+              }
+              .filled_big_text {
+                text-align: center;
+                font-size: 2.25rem;
+                line-height: 50px;
+              }
+              .normal_text {
+                text-align: center;
+                font-size: 0.9rem;
+                width: 90%;
+              }
+            }
+            .contact_form_column_section {
+              display: flex;
+              justify-content: center;
+              margin-top: 16px;
             }
           }
         }

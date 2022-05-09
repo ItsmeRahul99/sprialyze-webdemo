@@ -22,7 +22,9 @@ const Header = () => {
               <hr className="horizontal_line" />
               <label className="callnow_label">
                 CALL NOW FOR A CONSULT
-                <span className="random_number"> XXX.XXX.XXXX</span>
+                <a className="random_number" href="tel:8665562570">
+                  XXX.XXX.XXXX
+                </a>
               </label>
             </Nav>
           </Navbar.Collapse>

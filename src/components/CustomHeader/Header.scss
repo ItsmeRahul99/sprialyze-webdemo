@@ -26,6 +26,12 @@
             color: $white_text_color;
             text-decoration: underline;
           }
+
+          &:hover {
+            text-shadow: 0 0 0.65px #fff, 0 0 0.65px #fff;
+            color: $white_text_color;
+            text-decoration: underline;
+          }
         }
         .horizontal_line {
           height: 14px;
@@ -46,5 +52,36 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
+  .custom_navbar {
+    .container {
+      .navbar-brand {
+        .logo_image {
+          width: 80%;
+        }
+      }
+      .navbar-collapse {
+        flex-grow: 0;
+        align-items: center;
+
+        .navbar-nav {
+          align-items: center;
+          .nav-link {
+            margin-right: 0px;
+          }
+          .horizontal_line {
+            display: none;
+          }
+          .callnow_label {
+            margin-left: 0px;
+            margin-top: 10px;
+
+            .random_number {
+              color: $primary_light_color;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -8,12 +8,40 @@
   border-radius: 12px;
   padding: 50px 28px 56px;
 
-  .title_form_text {
-    font-weight: 700;
-    font-size: 1.75rem;
-    line-height: 34px;
-    text-align: center;
-    color: $white_text_color;
-    margin-bottom: 28px;
+  .contact_form_row {
+    .title_form_text {
+      font-weight: 700;
+      font-size: 1.75rem;
+      line-height: 34px;
+      text-align: center;
+      color: $white_text_color;
+      margin-bottom: 28px;
+    }
+  }
+  .submit_filled_button {
+    display: grid;
+    place-items: center;
+    .btn-primary {
+      padding-left: 52px;
+      padding-right: 52px;
+      height: 56px;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .contact_form_container {
+    padding: 36px 16px 36px;
+
+    .submit_filled_button {
+      display: grid;
+      .btn-primary {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-left: 30x;
+      }
+    }
   }
 }

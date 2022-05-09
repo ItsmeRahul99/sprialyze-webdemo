@@ -1,0 +1,70 @@
+@import "../../assests/styles/variable.scss";
+
+.cardcollection_container {
+  .card_outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $primary_light_color;
+    border-radius: 4px;
+    height: 96px;
+    margin-top: 36px;
+    padding: 0 80px;
+    cursor: pointer;
+
+    &:hover {
+      .center_card_text {
+        color: $primary_light_color;
+      }
+      .rounded_I {
+        opacity: 1;
+      }
+    }
+    .rounded_I {
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      border: 1px solid $primary_light_color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $primary_light_color;
+      font-size: 0.8rem;
+      margin-left: 6px;
+      opacity: 0;
+      transition: 0.3s opacity ease;
+    }
+    .center_card_text {
+      font-weight: 700;
+      font-size: 1.1rem;
+      line-height: 24px;
+      text-align: center;
+      margin: 0;
+
+      //   &:hover {
+      //     color: $primary_light_color;
+      //   }
+    }
+  }
+}
+
+.tooltip {
+  width: 300px;
+  background-color: $secondary_little_dark_color;
+  border-radius: 6px;
+
+  .tooltip-arrow {
+    &::before {
+      bottom: 6px;
+      border-bottom-color: $secondary_little_dark_color;
+    }
+  }
+
+  .tooltip-inner {
+    max-width: none;
+    font-size: 0.9rem;
+    color: $white_text_color;
+    font-weight: 400;
+    background-color: transparent;
+  }
+}

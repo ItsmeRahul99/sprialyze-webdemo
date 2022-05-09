@@ -1,0 +1,11 @@
+.images_collection_container {
+  .single_image_style {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .images_collection_container {
+    display: none;
+  }
+}

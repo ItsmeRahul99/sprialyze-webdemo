@@ -4,25 +4,30 @@ import "./CustomFooter.scss";
 
 const CustomFooter = () => {
   return (
-    <div className="footer_main_container">
-      <Container>
+    <footer className="footer_main_container">
+      <Container className="footer_container">
         <Row>
           <Col lg={6} md={12} sm={12}>
-            @2022 Get an Intervention Inc. All rights reserved.
+            <p className="footer_text">
+              @2022 Get an Intervention Inc. All rights reserved.
+            </p>
           </Col>
-          <Col lg={6} md={12} sm={12}>
-            <Row>
-              <a href={() => false}> Privacy Policy</a>
-              <hr />
-              <a href={() => false}>Terms of use</a>
-              <hr />
-              <a href={() => false}>Site Map</a>
-              <hr />
-            </Row>
+          <Col lg={6} md={12} sm={12} className="footer_link_column">
+            <a href={() => false} className="footer_link">
+              Privacy Policy
+            </a>
+            <span className="short_line" />
+            <a href={() => false} className="footer_link">
+              Terms of use
+            </a>
+            <span className="short_line" />
+            <a href={() => false} className="footer_link">
+              Site Map
+            </a>
           </Col>
         </Row>
       </Container>
-    </div>
+    </footer>
   );
 };
 
